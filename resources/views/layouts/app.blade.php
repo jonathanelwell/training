@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ config('app.name', 'Training Log') }}</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -52,7 +52,9 @@
                                 </a>
 
                                 <ul class="dropdown-menu">
-                                    <li>
+									<li><a href="{{ route('profile') }}">Profile</a></li>
+									<li><a href="{{ route('integrations') }}">Integrations</a></li>
+                                    <li>									
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -63,6 +65,7 @@
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
+									
                                 </ul>
                             </li>
                         @endguest

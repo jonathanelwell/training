@@ -1,0 +1,24 @@
+[27-Dec-2019 13:44:00 America/Chicago] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home4/jelwell/tr in /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[27-Dec-2019 13:44:02 America/Chicago] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home4/jelwell/tr in /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[27-Dec-2019 13:49:04 America/Chicago] PHP Fatal error:  Uncaught ReflectionException: Class config does not exist in /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Container/Container.php:752
+Stack trace:
+#0 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(752): ReflectionClass->__construct('config')
+#1 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(631): Illuminate\Container\Container->build('config')
+#2 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Container/Container.php(586): Illuminate\Container\Container->resolve('config', Array)
+#3 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
+#4 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
+#5 /home4/jelwell/tr in /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752

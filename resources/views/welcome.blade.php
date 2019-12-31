@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
+        <title>Training Log</title>
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
@@ -77,18 +77,25 @@
                 </div>
             @endif
 
+			<?php
+				/*
+				$to_name = 'Jonathan Elwell';
+				$to_email = 'jonathan.elwell@gmail.com';
+				
+				$data = array( "name"=>"Jonathan Elwell", "body" => "Test Email Body" );
+				
+				Mail::send('emails.mail', $data, function($message) use ($to_name, $to_email)
+				{
+					$message->to($to_email, $to_name)->subject("Your Training Log");
+					$message->from("noreply@train.jonathanelwell.com","Test Mail");
+				});
+				*/
+			?>
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel
+                    Training Log
                 </div>
-
-                <div class="links">
-                    <a href="https://laravel.com/docs">Documentation</a>
-                    <a href="https://laracasts.com">Laracasts</a>
-                    <a href="https://laravel-news.com">News</a>
-                    <a href="https://forge.laravel.com">Forge</a>
-                    <a href="https://github.com/laravel/laravel">GitHub</a>
-                </div>
+				<a href="{{ url('/home') }}">Go to my Dashboard</a>
             </div>
         </div>
     </body>
