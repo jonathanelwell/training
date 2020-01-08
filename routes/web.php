@@ -11,17 +11,26 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
+Route::get('/', function () {
+    return view('home');
+});
 Route::get('/profile', function () {
 	 return view('profile');
 })->name('profile');
 Route::get('/integrations', function () {
 	 return view('integrations');
 })->name('integrations');
+Route::get('/fitness-tests', function () {
+	 return view('fitness_tests');
+})->name('fitness-tests');
+
+Route::get('/training-plan/{id}', function ( $id ) {
+	 return view('training_plan', ['id' => $id]);
+})->name('training-plan');
+
+Route::get('/test', function () {
+	 return view('test');
+})->name('test');

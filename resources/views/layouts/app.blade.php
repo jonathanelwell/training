@@ -28,7 +28,7 @@
                     </button>
 
                     <!-- Branding Image -->
-                    <a class="navbar-brand" href="{{ url('/') }}">
+                    <a class="navbar-brand" href="{{ url('/home') }}">
                         {{ config('app.name', 'Laravel') }}
                     </a>
                 </div>
@@ -54,6 +54,7 @@
                                 <ul class="dropdown-menu">
 									<li><a href="{{ route('profile') }}">Profile</a></li>
 									<li><a href="{{ route('integrations') }}">Integrations</a></li>
+									<li><a href="{{ route('fitness-tests') }}">Fitness Tests</a></li>
                                     <li>									
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();

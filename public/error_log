@@ -22,3 +22,37 @@ Stack trace:
 #3 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(732): Illuminate\Container\Container->make('config', Array)
 #4 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(110): Illuminate\Foundation\Application->make('config', Array)
 #5 /home4/jelwell/tr in /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 752
+[03-Jan-2020 02:30:35 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/jelwell/train.jonathanelwell.com/storage/framework/views/../vendor/autoload.php): failed to open stream: No such file or directory in /home4/jelwell/train.jonathanelwell.com/storage/framework/views/8f675c564f3919c9f8cb0547a3b4478fd7c7020d.php:7
+Stack trace:
+#0 /home4/jelwell/train.jonathanelwell.com/storage/framework/views/8f675c564f3919c9f8cb0547a3b4478fd7c7020d.php(7): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/jelwell/...', 7, Array)
+#1 /home4/jelwell/train.jonathanelwell.com/storage/framework/views/8f675c564f3919c9f8cb0547a3b4478fd7c7020d.php(7): require_once()
+#2 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home4/jelwell/...')
+#3 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home4/jelwell/...', Array)
+#4 /home4/jel in /home4/jelwell/train.jonathanelwell.com/storage/framework/views/8f675c564f3919c9f8cb0547a3b4478fd7c7020d.php on line 7
+[03-Jan-2020 02:30:35 UTC] PHP Fatal error:  Illuminate\View\Engines\PhpEngine::main(): Failed opening required '/home4/jelwell/train.jonathanelwell.com/storage/framework/views/../vendor/autoload.php' (include_path='/home4/jelwell/train.jonathanelwell.com/vendor/dawguk/php-garmin-connect/src:.:/opt/php71/lib/php') in /home4/jelwell/train.jonathanelwell.com/storage/framework/views/8f675c564f3919c9f8cb0547a3b4478fd7c7020d.php on line 7
+[03-Jan-2020 02:32:31 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/jelwell/train.jonathanelwell.com/storage/framework/views/../../vendor/autoload.php): failed to open stream: No such file or directory in /home4/jelwell/train.jonathanelwell.com/storage/framework/views/8f675c564f3919c9f8cb0547a3b4478fd7c7020d.php:7
+Stack trace:
+#0 /home4/jelwell/train.jonathanelwell.com/storage/framework/views/8f675c564f3919c9f8cb0547a3b4478fd7c7020d.php(7): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/jelwell/...', 7, Array)
+#1 /home4/jelwell/train.jonathanelwell.com/storage/framework/views/8f675c564f3919c9f8cb0547a3b4478fd7c7020d.php(7): require_once()
+#2 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home4/jelwell/...')
+#3 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home4/jelwell/...', Array)
+#4 /home4/ in /home4/jelwell/train.jonathanelwell.com/storage/framework/views/8f675c564f3919c9f8cb0547a3b4478fd7c7020d.php on line 7
+[03-Jan-2020 02:32:31 UTC] PHP Fatal error:  Illuminate\View\Engines\PhpEngine::main(): Failed opening required '/home4/jelwell/train.jonathanelwell.com/storage/framework/views/../../vendor/autoload.php' (include_path='/home4/jelwell/train.jonathanelwell.com/vendor/dawguk/php-garmin-connect/src:.:/opt/php71/lib/php') in /home4/jelwell/train.jonathanelwell.com/storage/framework/views/8f675c564f3919c9f8cb0547a3b4478fd7c7020d.php on line 7
+[03-Jan-2020 02:32:49 UTC] PHP Warning:  Uncaught ErrorException: require_once(/home4/jelwell/train.jonathanelwell.com/storage/framework/views../../vendor/autoload.php): failed to open stream: No such file or directory in /home4/jelwell/train.jonathanelwell.com/storage/framework/views/8f675c564f3919c9f8cb0547a3b4478fd7c7020d.php:7
+Stack trace:
+#0 /home4/jelwell/train.jonathanelwell.com/storage/framework/views/8f675c564f3919c9f8cb0547a3b4478fd7c7020d.php(7): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require_once(/h...', '/home4/jelwell/...', 7, Array)
+#1 /home4/jelwell/train.jonathanelwell.com/storage/framework/views/8f675c564f3919c9f8cb0547a3b4478fd7c7020d.php(7): require_once()
+#2 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(43): include('/home4/jelwell/...')
+#3 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(59): Illuminate\View\Engines\PhpEngine->evaluatePath('/home4/jelwell/...', Array)
+#4 /home4/j in /home4/jelwell/train.jonathanelwell.com/storage/framework/views/8f675c564f3919c9f8cb0547a3b4478fd7c7020d.php on line 7
+[03-Jan-2020 02:32:49 UTC] PHP Fatal error:  Illuminate\View\Engines\PhpEngine::main(): Failed opening required '/home4/jelwell/train.jonathanelwell.com/storage/framework/views../../vendor/autoload.php' (include_path='/home4/jelwell/train.jonathanelwell.com/vendor/dawguk/php-garmin-connect/src:.:/opt/php71/lib/php') in /home4/jelwell/train.jonathanelwell.com/storage/framework/views/8f675c564f3919c9f8cb0547a3b4478fd7c7020d.php on line 7
+[06-Jan-2020 10:30:51 EST] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199245824 bytes) in /home4/jelwell/train.jonathanelwell.com/storage/framework/views/df8094a8b957c89f75234baec3f08d0247b6a743.php on line 62
+[06-Jan-2020 10:30:51 EST] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199376896 bytes) in /home4/jelwell/train.jonathanelwell.com/vendor/symfony/http-foundation/Response.php on line 361
+[06-Jan-2020 10:30:51 EST] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199229440 bytes) in Unknown on line 0
+[06-Jan-2020 10:30:56 EST] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199245824 bytes) in /home4/jelwell/train.jonathanelwell.com/storage/framework/views/df8094a8b957c89f75234baec3f08d0247b6a743.php on line 62
+[06-Jan-2020 10:30:56 EST] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199376896 bytes) in /home4/jelwell/train.jonathanelwell.com/vendor/symfony/http-foundation/Response.php on line 361
+[06-Jan-2020 10:30:56 EST] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199229440 bytes) in Unknown on line 0
+[06-Jan-2020 10:56:46 EST] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199245824 bytes) in /home4/jelwell/train.jonathanelwell.com/storage/framework/views/df8094a8b957c89f75234baec3f08d0247b6a743.php on line 62
+[06-Jan-2020 10:56:46 EST] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199376896 bytes) in /home4/jelwell/train.jonathanelwell.com/vendor/symfony/http-foundation/Response.php on line 361
+[06-Jan-2020 10:56:46 EST] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199229440 bytes) in Unknown on line 0
+[07-Jan-2020 09:52:47 EST] PHP Fatal error:  Cannot declare class App\Workout, because the name is already in use in /home4/jelwell/train.jonathanelwell.com/app/WorkoutType.php on line 10
