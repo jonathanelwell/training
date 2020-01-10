@@ -7,16 +7,28 @@
             <div class="panel panel-default">
 				<?php  
 					use Carbon\Carbon;
-					$week = DB::table('training_plan_weeks')
-					->join('training_plans', 'training_plan_weeks.training_plan_id', '=', 'training_plans.id')
-					->join('training_plan_week_types', 'training_plan_weeks.training_plan_week_type_id', '=', 'training_plan_week_types.id')
-					->select('training_plan_weeks.*', 'training_plans.name AS training_plan_name','training_plan_week_types.name AS week_type_name')
-					->where
+					
+					$week = App\TrainingPlanWeek::where
 					([
-						['training_plan_weeks.start_date', '<=',  Carbon::now()->toDateString() ],
-						['training_plan_weeks.end_date', '>=',  Carbon::now()->toDateString() ]
+						['start_date', '<=',  Carbon::now()->toDateString() ],
+						['end_date', '>=',  Carbon::now()->toDateString() ]
 					])->first();
 					
+					$weeks_in_section = App\TrainingPlanWeek::where([
+						['training_plan_id', 		   $week->training_plan_id],
+						['training_plan_week_type_id', $week->training_plan_week_type_id]
+						])->get();
+						
+					$week_number = 1;
+					foreach( $weeks_in_section as $week_to_check )
+					{
+						if( $week->is( $week_to_check ) )
+						{
+							continue;
+						}
+						$week_number++;
+					}
+						
 					$training_plan_url = route('training-plan', ['id' => $week->training_plan_id]);
 					
 				?>
@@ -25,19 +37,7 @@
                    <?php
 						if( isset($week) )
 						{
-							//print_r( $week );
-							?>
-								<div class="week_container summary">
-									<div class="week_header">
-										
-										<div class="week_title"><?php echo $week->week_type_name . " - Week " . "1"; ?></div>
-										<div class="week_goal"><?php echo "Goal|Actual: " . $week->week_goal . "|" . $week->week_actual; ?></div>
-										<div class="week_comment"><?php echo $week->comment; ?></div>
-									</div>
-								</div>
-							
-							<?
-							
+							echo view('training_plan_week',[ "id" => $week->id, "summary" => true, "position" => "", "week_number" => $week_number ])->render();
 						}
 						else
 						{
@@ -59,7 +59,7 @@
 							$workouts = App\Workout::orderBy('recorded', 'desc')->take(5)->get();
 							foreach ($workouts as $workout)
 							{
-								echo $workout->title;
+								echo view('workout',["id" => $workout->id])->render();
 							}
 						?>
 					</div>
