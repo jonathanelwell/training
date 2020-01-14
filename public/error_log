@@ -56,3 +56,42 @@ Stack trace:
 [06-Jan-2020 10:56:46 EST] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199376896 bytes) in /home4/jelwell/train.jonathanelwell.com/vendor/symfony/http-foundation/Response.php on line 361
 [06-Jan-2020 10:56:46 EST] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199229440 bytes) in Unknown on line 0
 [07-Jan-2020 09:52:47 EST] PHP Fatal error:  Cannot declare class App\Workout, because the name is already in use in /home4/jelwell/train.jonathanelwell.com/app/WorkoutType.php on line 10
+[13-Jan-2020 13:04:40 EST] PHP Fatal error:  Uncaught Exception: Exception: Exception: Exception: Exception: Exception: Exception: Exception: Exception: Exception: Exception: Exception: Exception: Illuminate\Session\TokenMismatchException in /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:71
+Stack trace:
+#0 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(149): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#1 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#2 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Routing\Pipeline->Illuminate\Routing\{closure}(Object(Illuminate\Http\Request))
+#3 /home4/jelwell/train.jonathanelwel in /home4/jelwell/train.jonathanelwell.com/app/Exceptions/Handler.php on line 54
+[13-Jan-2020 13:04:40 EST] PHP Fatal error:  Uncaught Exception: Symfony\Component\Debug\Exception\FatalErrorException: Uncaught Exception: Exception: Exception: Exception: Exception: Exception: Exception: Exception: Exception: Exception: Exception: Exception: Exception: Illuminate\Session\TokenMismatchException in /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/VerifyCsrfToken.php:71
+Stack trace:
+#0 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(149): Illuminate\Foundation\Http\Middleware\VerifyCsrfToken->handle(Object(Illuminate\Http\Request), Object(Closure))
+#1 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/Routing/Pipeline.php(53): Illuminate\Pipeline\Pipeline->Illuminate\Pipeline\{closure}(Object(Illuminate\Http\Request))
+#2 /home4/jelwell/train.jonathanelwell.com/vendor/laravel/framework/src/Illuminate/View/Middleware/ShareErrorsFromSession.php(49): Illuminate\Routing\Pipeline->Illuminate\Routing\{clos in /home4/jelwell/train.jonathanelwell.com/app/Exceptions/Handler.php on line 54
+[13-Jan-2020 16:49:26 EST] PHP Warning:  Uncaught ErrorException: require(\adriangibbons\phpFITFileAnalysis): failed to open stream: No such file or directory in /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/WorkoutController.php:6
+Stack trace:
+#0 /home4/jelwell/train.jonathanelwell.com/vendor/sentry/sentry/src/ErrorHandler.php(379): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(\\adrian...', '/home4/jelwell/...', 6, Array)
+#1 /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/WorkoutController.php(6): Sentry\ErrorHandler->handleError(2, 'require(\\adrian...', '/home4/jelwell/...', 6, Array)
+#2 /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/WorkoutController.php(6): require()
+#3 /home4/jelwell/train.jonathanelwell.com/vendor/composer/ClassLoader.php(444): include('/home4/jelwell/...')
+#4 /home4/jelwell/train.jonathanelwell.com/vendor/composer/ClassLoader.php(322): Composer\Autoload\includeFile('/home4/jelwell/...')
+#5 [internal function]: Composer\Autoload\ClassLoader->loadClass('App in /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/WorkoutController.php on line 6
+[13-Jan-2020 16:49:26 EST] PHP Fatal error:  main(): Failed opening required '\adriangibbons\phpFITFileAnalysis' (include_path='.:/opt/php71/lib/php') in /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/WorkoutController.php on line 6
+[13-Jan-2020 16:51:07 EST] PHP Warning:  Uncaught ErrorException: require(/home4/jelwell/train.jonathanelwell.com/app/Http/Controllers\..\..\..endor\adriangibbons\php-fit-file-analysis\src\phpFITFileAnalysis.php): failed to open stream: No such file or directory in /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/WorkoutController.php:6
+Stack trace:
+#0 /home4/jelwell/train.jonathanelwell.com/vendor/sentry/sentry/src/ErrorHandler.php(379): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home4/...', '/home4/jelwell/...', 6, Array)
+#1 /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/WorkoutController.php(6): Sentry\ErrorHandler->handleError(2, 'require(/home4/...', '/home4/jelwell/...', 6, Array)
+#2 /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/WorkoutController.php(6): require()
+#3 /home4/jelwell/train.jonathanelwell.com/vendor/composer/ClassLoader.php(444): include('/home4/jelwell/...')
+#4 /home4/jelwell/train.jonathanelwell.com/vendor/composer/ClassLoader.php(322): Composer\Autoload\ in /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/WorkoutController.php on line 6
+[13-Jan-2020 16:51:07 EST] PHP Fatal error:  main(): Failed opening required '/home4/jelwell/train.jonathanelwell.com/app/Http/Controllers\..\..\..endor\adriangibbons\php-fit-file-analysis\src\phpFITFileAnalysis.php' (include_path='.:/opt/php71/lib/php') in /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/WorkoutController.php on line 6
+[13-Jan-2020 16:52:31 EST] PHP Warning:  Uncaught ErrorException: require(/home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/../../../vendor\adriangibbons\php-fit-file-analysis\src\phpFITFileAnalysis.php): failed to open stream: No such file or directory in /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/WorkoutController.php:6
+Stack trace:
+#0 /home4/jelwell/train.jonathanelwell.com/vendor/sentry/sentry/src/ErrorHandler.php(379): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(2, 'require(/home4/...', '/home4/jelwell/...', 6, Array)
+#1 /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/WorkoutController.php(6): Sentry\ErrorHandler->handleError(2, 'require(/home4/...', '/home4/jelwell/...', 6, Array)
+#2 /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/WorkoutController.php(6): require()
+#3 /home4/jelwell/train.jonathanelwell.com/vendor/composer/ClassLoader.php(444): include('/home4/jelwell/...')
+#4 /home4/jelwell/train.jonathanelwell.com/vendor/composer/ClassLoader.php(322): Composer\Autoload in /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/WorkoutController.php on line 6
+[13-Jan-2020 16:52:31 EST] PHP Fatal error:  main(): Failed opening required '/home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/../../../vendor\adriangibbons\php-fit-file-analysis\src\phpFITFileAnalysis.php' (include_path='.:/opt/php71/lib/php') in /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/WorkoutController.php on line 6
+[14-Jan-2020 15:45:33 EST] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199233536 bytes) in /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/TrainingPlanWeekController.php on line 48
+[14-Jan-2020 15:50:40 EST] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199233536 bytes) in /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/TrainingPlanWeekController.php on line 48
+[14-Jan-2020 15:51:33 EST] PHP Fatal error:  Allowed memory size of 268435456 bytes exhausted (tried to allocate 199233536 bytes) in /home4/jelwell/train.jonathanelwell.com/app/Http/Controllers/TrainingPlanWeekController.php on line 48

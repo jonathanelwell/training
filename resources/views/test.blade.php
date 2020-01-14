@@ -4,10 +4,25 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <meta name="csrf-token" content="{{ csrf_token() }}">
 <div class="container">
+	<pre>
 	<?php
-	$training_plan = App\TrainingPlan::find(1);
-	$weeks_section 	= $training_plan->weeks->where("training_plan_week_type_id", 4 );
-	var_dump($weeks_section);
+
+	$garmin_FFA = new adriangibbons\phpFITFileAnalysis( public_path() . "/4432470053.fit");
+
+	//print_r($garmin_FFA->data_mesgs);
+	
+	$activity = $garmin_FFA->data_mesgs['session'];
+	
+	$data = array
+	(
+		"distance"			=> $activity["total_distance"],
+		"calories"			=> $activity["total_calories"],
+		"hr_average"		=> $activity["avg_heart_rate"],
+		"hr_max"			=> $activity["max_heart_rate"],
+		"elevation_gain"	=> $activity["total_distance"]
+	);
+	
+	echo json_encode($data);
 	
 	/*
 		use Carbon\Carbon;
@@ -46,47 +61,13 @@
 		}
 		*/
 	?>
-
-	<form id="form_workout_import" class="form-horizontal" enctype="multipart/form-data">
-		{{ csrf_field() }}
-		<div class="input-row">
-			<input type="text" name="name"></input>
-			<label class="col-md-4 control-label">Choose CSV File</label>
-			<input type="file" name="activities_file" id="activities_file" accept=".csv">
-			<button type="button" id="submit" name="import" class="btn-submit" onclick="workouts_import()">Import AJAX</button>
-			<br />
-		</div>
-	</form>
+	</pre>
+	
 	<script type="text/javascript">
 	$(document).ready( function()
 	{
-		$.ajaxSetup({
-			headers: {
-				'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-			}
-		});
 	});
-	function workouts_import()
-	{
-		var import_form = document.getElementById('form_workout_import');
-		var import_form_data = new FormData(import_form);
-		
-		//submits the ticket
-		$.ajax
-		({ 
-			url: "/workout/import",
-			data: import_form_data,
-			processData: false,
-			contentType: false,
-			type: 'POST',
-			success: function( result )
-			{
-				console.log("RESULTS\n");
-				console.log( result );
-				console.log( "END\n" );
-			}
-		});
-	}
+	
 </script>
 </div>
 @endsection

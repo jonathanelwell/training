@@ -16,21 +16,37 @@ Auth::routes(); Route::get('/home',
 Route::get('/profile', function () {
 	 return view('profile');
 })->name('profile');
+
 Route::get('/integrations', function () {
 	 return view('integrations');
 })->name('integrations');
+
 Route::get('/fitness-tests', function () {
 	 return view('fitness_tests');
 })->name('fitness-tests');
-Route::get('/training-plan/{id}', function ( $id ) {
-	 return view('training_plan', ['id' => $id]);
-})->name('training-plan');
+
+
+
+Route::post( '/test-ajax', 'TestController@test'); 
+Route::resource('training-plan', 'TrainingPlanController');
+
+Route::get( '/training_plan_week/{id}', 'TrainingPlanWeekController@show');
+Route::post( '/training_plan_week/update', 'TrainingPlanWeekController@update');
+//Route::resource('training-plan-week', 'TrainingPlanWeekController');
+
+Route::post( '/workout/import', 'WorkoutController@import');
+Route::post( '/workout/{id}', 'WorkoutController@update');
+Route::resource('workout', 'WorkoutController');
+
+
+
 Route::get('/test', function () {
 	 return view('test');
 })->name('test');
 
-Route::post( '/test-ajax', 'TestController@test'); 
-Route::post( '/workout/import', 'WorkoutController@import'); 
-Route::resource('workout', 'WorkoutController');
+Route::get('/debug-sentry', function () {
+    
+});
+
 ?>
 

@@ -1,0 +1,245 @@
+.page_title
+{
+	font-size: 18pt;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+	margin-top: -15px;
+}
+.training_plan_content
+{
+	height: 820px;
+	padding-bottom: 10px;
+	overflow: hidden;
+}
+.training_plan_week_section_container
+{
+	height: 800px;
+	float: left;
+}
+.training_plan_week_section_header
+{
+	height: 50px;
+	font-size: 22pt;
+    color: #FFF;
+    text-align: center;
+}
+.training_plan_week_section_header .title
+{
+	position: relative;
+}
+.training_plan_week_section_content
+{
+	height: 740px;
+
+}
+.week_container
+{
+	width: 300px;
+	height: 770px;
+	float: left;
+	text-align:center;
+	border-width: 2px 1px 2px 1px;
+	border-color: #313a40;
+	border-style: solid;
+}
+.week_container.summary
+{
+	width: 300px;
+	height: 110px;
+	overflow: hidden;
+}
+.week_container.first
+{
+	border-width: 2px 1px 2px 2px!important
+}
+.week_container.last
+{
+	border-width: 2px 2px 2px 1px!important
+}
+.week_container.current
+{
+	border-width: 4px 4px 4px 4px!important;
+	border-color: #B20D0D!important;
+}
+.week_header
+{
+	background: #67737a;
+	color: #FFF;
+	height: 110px;
+	font-weight: bold;
+	font-size: 12pt;
+	padding-top: 4px;
+}
+.week_time_container
+{
+	height: 50px;
+}
+.week_time
+{
+	height: 50px;
+	width: 96px;
+	float: left;
+}
+.week_time.goal .week_time_value
+{
+	cursor: pointer;
+}
+.week_time.goal .week_time_value:hover, .week_comment:hover
+{
+	background: #FFF;
+    color: #000;
+}
+.week_time_input, .week_comment_input
+{
+	display: none;
+}
+.week_comment
+{
+	height: 25px;
+}
+.scrollbar-primary::-webkit-scrollbar
+{
+	width: 12px;
+	background-color: #F5F5F5;
+}
+.scrollbar-primary::-webkit-scrollbar-thumb
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+	background-color: #C2CDD4;
+}
+.day_container
+{
+	height:94px;
+	width: 300px;
+	text-align:center;
+	border-width: 1px 1px 1px 1px;
+	border-color: #7a909e;
+	border-style: solid;
+}
+.week_container.current .day_container
+{
+	margin-left: -3px;
+}
+.day_title
+{
+	background: #C2CDD4;
+	width: 297px;
+	color:#000;
+	font-weight: bold;
+}
+.day_title.current 
+{
+	background: #820303!important;
+	color: #FFF!important;
+}
+.day_content
+{
+	width: 300px;
+	overflow: hidden;
+}
+.week_container.current .day_title
+{
+	width: 290px;
+	margin-left: 3px;
+}
+.day_container.current .day_title
+{
+	width: 291px!important;
+	margin-left: 0px!important;
+}
+.workout_container, .workout_add
+{
+	width: 95px;
+	height: 63px;
+	-webkit-transition: background 1s;
+	cursor: pointer;
+	border-width: 1px;
+	border-style:solid;
+	border-color: black;
+	padding-top: 10px;
+	border-radius: 4px;
+}
+.workout_add
+{
+	opacity: 0;
+	transition: opacity .5s;
+	margin-left: 10px;
+}
+.workout_add:hover
+{
+	opacity: .5;
+}
+.workout_container:hover
+{
+	background: #d8e1f0;
+}
+.workout_container.scheduled
+{
+	opacity: .4;
+}
+.workout_image
+{
+	width: 30px;
+	float:left;
+}
+.workout_image img
+{
+	width: 30px;
+}
+.workout_content
+{
+	width: 63px;
+	height: 50px;
+	float:left;
+	font-size: 8pt;
+	filter: none!important;
+	-webkit-filter:none!important;
+}
+.workout_title
+{
+	font-weight: bold;
+}
+.workout_container.image-blue
+{
+	border-color: #041b7a;
+}
+.workout_container.image-green
+{
+	border-color: #036319;
+}
+.workout_container.image-yellow
+{
+	border-color: #9ea106;
+}
+.workout_container.image-red
+{
+	border-color: #910e0c;
+}
+.workout_container.image-gray
+{
+	border-color: #858585;
+}
+
+img.image-blue
+{
+	filter: invert(45%) sepia(95%) saturate(585%) hue-rotate(152deg) brightness(94%) contrast(105%);
+	-webkit-filter: invert(45%) sepia(95%) saturate(585%) hue-rotate(152deg) brightness(94%) contrast(105%);
+}
+img.image-green
+{
+	filter: invert(25%) sepia(57%) saturate(1588%) hue-rotate(98deg) brightness(92%) contrast(86%);
+	-webkit-filter: invert(25%) sepia(57%) saturate(1588%) hue-rotate(98deg) brightness(92%) contrast(86%);
+}
+img.image-yellow
+{
+	filter: invert(54%) sepia(98%) saturate(379%) hue-rotate(17deg) brightness(99%) contrast(101%);
+}
+img.image-red
+{
+	filter: invert(10%) sepia(53%) saturate(6457%) hue-rotate(353deg) brightness(104%) contrast(95%);
+}
+img.image-gray
+{
+	filter: invert(62%) sepia(6%) saturate(73%) hue-rotate(22deg) brightness(98%) contrast(87%);
+}
